@@ -3,124 +3,125 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 
-; -- Scroll Lock turns QWERTY Command on/off (Scroll Lock off = QWERTY Command on)
+; -- Scroll Lock turns QWERTY commands on/off (Scroll Lock off = QWERTY commands on)
 ~ScrollLock::Suspend
 
-;----------------- CTRL KEY
-*^[::Send ^-
-*^]::Send ^=
+;----------------- CTRL + KEY
+*^[::^-
+*^]::^=
 
-*^'::Send ^q
-*^,::Send ^w
-*^.::Send ^e
-*^p::Send ^r
-*^y::Send ^t
-*^f::Send ^y
-*^g::Send ^u
-*^c::Send ^i
-*^r::Send ^o
-*^l::Send ^p
-*^/::Send ^[
-*^=::Send ^]
+*^'::^q
+*^,::^w
+*^.::^e
+*^p::^r
+*^y::^t
+*^f::^y
+*^g::^u
+*^c::^i
+*^r::^o
+*^l::^p
+*^/::^[
+*^=::^]
 
-*^o::Send ^s
-*^e::Send ^d
-*^u::Send ^f
-*^i::Send ^g
-*^d::Send ^h
-*^h::Send ^j
-*^t::Send ^k
-*^n::Send ^l
-*^s::Send ^`;
-*^-::Send ^'
+*^o::^s
+*^e::^d
+*^u::^f
+*^i::^g
+*^d::^h
+*^h::^j
+*^t::^k
+*^n::^l
+*^s::^`;
+*^-::^'
 
-*^`;::Send ^z
-*^q::Send ^x
-*^j::Send ^c
-*^k::Send ^v
-*^x::Send ^b
-*^b::Send ^n
-*^m::Send ^m
-*^w::Send ^,
-*^v::Send ^.
-*^z::Send ^/
+*^`;::^z
+*^q::^x
+*^j::^c
+*^k::^v
+*^x::^b
+*^b::^n
+*^m::^m
+*^w::^,
+*^v::^.
+*^z::^/
 
-;----------------- ALT KEY
+;----------------- ALT + KEY
 
-*![::Send !-
-*!]::Send !=
+*![::!-
+*!]::!=
 
-*!'::Send !q
-*!,::Send !w
-*!.::Send !e
-*!p::Send !r
-*!y::Send !t
-*!f::Send !y
-*!g::Send !u
-*!c::Send !i
-*!r::Send !o
-*!l::Send !p
-*!/::Send ![
-*!=::Send !]
+*!'::!q
+*!,::!w
+*!.::!e
+*!p::!r
+*!y::!t
+*!f::!y
+*!g::!u
+*!c::!i
+*!r::!o
+*!l::!p
+*!/::![
+*!=::!]
 
-*!o::Send !s
-*!e::Send !d
-*!u::Send !f
-*!i::Send !g
-*!d::Send !h
-*!h::Send !j
-*!t::Send !k
-*!n::Send !l
-*!s::Send !`;
-*!-::Send !'
+*!o::!s
+*!e::!d
+*!u::!f
+*!i::!g
+*!d::!h
+*!h::!j
+*!t::!k
+*!n::!l
+*!s::!`;
+*!-::!'
 
-*!`;::Send !z
-*!q::Send !x
-*!j::Send !c
-*!k::Send !v
-*!x::Send !b
-*!b::Send !n
-*!m::Send !m
-*!w::Send !,
-*!v::Send !.
-*!z::Send !/
+*!`;::!z
+*!q::!x
+*!j::!c
+*!k::!v
+*!x::!b
+*!b::!n
+*!m::!m
+*!w::!,
+*!v::!.
+*!z::!/
 
-;----------------- WINDOWS KEY
 
-*#[::Send #-
-*#]::Send #=
+;----------------- WINDOWS + KEY
 
-*#'::Send #q
-*#,::Send #w
-*#.::Send #e
-*#p::Send #r
-*#y::Send #t
-*#f::Send #y
-*#g::Send #u
-*#c::Send #i
-*#r::Send #o
-*#l::Send #p
-*#/::Send #[
-*#=::Send #]
+*#[::#-
+*#]::#=
 
-*#o::Send #s
-*#e::Send #d
-*#u::Send #f
-*#i::Send #g
-*#d::Send #h
-*#h::Send #j
-*#t::Send #k
-*#n::Send #l
-*#s::Send #`;
-*#-::Send #'
+*#'::#q
+*#,::#w
+*#.::#e
+*#p::#r
+*#y::#t
+*#f::#y
+*#g::#u
+*#c::#i
+*#r::#o
+*#l::#p
+*#/::#[
+*#=::#]
 
-*#`;::Send #z
-*#q::Send #x
-*#j::Send #c
-*#k::Send #v
-*#x::Send #b
-*#b::Send #n
-*#m::Send #m
-*#w::Send #,
-*#v::Send #.
-*#z::Send #/
+*#o::#s
+*#e::#d
+*#u::#f
+*#i::#g
+*#d::#h
+*#h::#j
+*#t::#k
+*#n::#l
+*#s::#`;
+*#-::#'
+
+*#`;::#z
+*#q::#x
+*#j::#c
+*#k::#v
+*#x::#b
+*#b::#n
+*#m::#m
+*#w::#,
+*#v::#.
+*#z::#/
