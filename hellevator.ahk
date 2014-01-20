@@ -9,50 +9,15 @@ SetTitleMatchMode, 1
 #IfWinActive, Terraria
 {
 z::
-  ;Mouse down
-  MouseClick, Left, , , , , D
+  Click down
   Running = 1
   while (Running == 1) {
-    ;Move right 8px then left 8px
-    MouseMove, 8, 0, 0, R
+    MouseMove, 10, 0, 0, R
     Sleep 50
-    MouseMove, -8, 0, 0, R
-    Sleep 50
-  }
-  ;mouse up
-  MouseClick, Left, , , , , U
-return
- 
-c::
-  Running = 1
-  while (Running == 1) {
-    MouseClick, Left, , , , 0
-    Sleep 40
-  }
-return
- 
-:*b0:va::
-  Running = 1
-  while (Running != 0){
-    Send {a down}
-    Sleep 100
-    Send {a up}
-    Sleep 50
-    MouseClick, Left
+    MouseMove, -10, 0, 0, R
     Sleep 50
   }
-return
- 
-:*b0:vd::
-  Running = 1
-  while (Running != 0){
-    Send {d down}
-    Sleep 100
-    Send {d up}
-    Sleep 50
-    MouseClick, Left
-    Sleep 50
-  }
+  Click up
 return
  
 x::
