@@ -10,8 +10,14 @@ SetTitleMatchMode, 1
 {
 	Pause
 	Option = 1
+	StartedClick = 0
 
 	while (true) {
+		if (StartedClick == 0) {
+			Click down
+			startedClick = 1
+		}
+
 		if (Option == 1) {
 			MouseMove, 10, 0, 0, R
 			Sleep 50
@@ -39,6 +45,11 @@ SetTitleMatchMode, 1
 	return
 
 	NumpadSub::
+		if (StartedClick == 1) {
+			Click up
+			StartedClick = 0
+		}
+
 		Pause
 	return
 }
