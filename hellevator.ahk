@@ -8,34 +8,38 @@ SetTitleMatchMode, 1
 ;Only do these if the active window's title starts with "Terraria"
 #IfWinActive, Terraria
 {
-	NumpadDiv::
-		Running = 1
-		Click down
-		while (Running == 1) {
+	Pause
+	Option = 1
+
+	while (true) {
+		if (Option == 1) {
 			MouseMove, 10, 0, 0, R
 			Sleep 50
 			MouseMove, -10, 0, 0, R
 			Sleep 50
 		}
-		Click up
-	return
 
-	NumpadMult::
-		Running = 1
-		Click down
-		while (Running == 1) {
+		else if (Option == 2) {
 			MouseMove, 0, -15, 0, R
 			Sleep 50
 			MouseMove, 0, 30, 0, R
 			Sleep 50
 			MouseMove, 0, -15, 0, R
-			Sleep 50
 		}
-		Click up
+	}
+
+	NumpadDiv::
+		Option = 1
+		Pause, Off
+	return
+
+	NumpadMult::
+		Option = 2
+		Pause, Off
 	return
 
 	NumpadSub::
-		Running = 0
+		Pause
 	return
 }
 #IfWinActive
