@@ -23,5 +23,19 @@ return
 x::
   Running = 0
 return
+
+c::
+  Click down
+  Running = 1
+  while (Running == 1) {
+    MouseMove, 0, -15, 0, R
+    Sleep 50
+    MouseMove, 0, 30, 0, R
+    Sleep 50
+    MouseMove, 0, -15, 0, R
+    Sleep 50
+  }
+  Click up
+return
 }
 #IfWinActive
