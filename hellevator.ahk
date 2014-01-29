@@ -31,6 +31,7 @@ SetTitleMatchMode, 1
 			MouseMove, 0, 30, 0, R
 			Sleep 50
 			MouseMove, 0, -15, 0, R
+			Sleep 50
 		}
 	}
 
